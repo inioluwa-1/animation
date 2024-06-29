@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow: hidden;
+}
+.house{
+    background-image: url('images/3d.png');
+    background-size: cover;
+    width: 100%;
+    height: 330px;
+    padding-top: 50px;
+}
+.heli{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    animation: cop 15s ease infinite;
+}
+@keyframes cop {
+    from{
+        transform: translate(1100px,0px);
+    }
+    to{
+        transform: translate(-1100px, 0px);
+    }
+}
+.sec{
+    width: 300px;
+    height: 300px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+.fl{
+    display: flex;
+    gap: 10px;
+
+}
+.road{
+    background-image: url('images/rodd-removebg-preview.png');
+    background-size: contain;
+    width: 100%;
+    height: 255px;
+
+}
+.it{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    margin-left: 1000px;
+    margin-top: 10px;
+    animation: move 4s ease infinite;
+   
+}
+@keyframes move {
+    from{
+        transform: translate(-1100px,0px);
+    }
+    to{
+        transform: translate(500px, 0px);
+    }
+    
+
+    
+}
+.ab{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    animation: bus 10s ease infinite;
+}
+@keyframes bus {
+    from{
+        transform: translate(-1100px,0px);
+    }
+    to{
+        transform: translate(1400px, 0px);
+    }
+}
+.dan{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    margin-top: 120px;
+    animation: danfo 9s ease infinite;
+    transform: translateX(1100px);
+}
+@keyframes danfo {
+    0%{
+        transform: translateX(1100px);
+    }
+    50%{
+        transform: translateX(-1100px);
+    }
+    100%{
+        transform: translate(-1000px, 1200px);
+    }
+}
+.lad{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    animation: lad 7s ease infinite;
+}
+@keyframes lad {
+    from{
+        transform: translate(-1100px,0px);
+    }
+    to{
+        transform: translate(1400px, 0px);
+    }
+}
+.man{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    margin-top: 120px;
+    animation: man 12s ease infinite;
+    transform: translateX(1300px);
+}
+@keyframes man {
+    0%{
+        transform: translateX(1300px);
+    }
+    50%{
+        transform: translateX(-1500px);
+    }
+    100%{
+        transform: translate(-1500px, 1000px);
+    }
+}
+.rs{
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    margin-top: 120px;
+    animation: truck 15s ease infinite;
+}
+@keyframes truck {
+    from{
+        transform: translate(1400px,0px);
+    }
+    to{
+        transform: translate(-1400px, 0px);
+    }
+}
